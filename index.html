@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JS -->
+    <script src="./js/script.js" defer></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>Lista de tarefas</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>TO-DO</h1>
+            <div id="addTask">
+                <span id="titleAddTasBtn">Adicionar nova tarefa</span>
+                <i class="fas fa-plus"></i>
+            </div>
+            <h2>Tarefas</h2>
+            <div id="tasks"></div>
+        </div>
+
+        <!-- MODAL -->
+        <di id="modal" class="modal">
+            <div class="modal-content">
+                <form id="form">
+                    <span id="titleModal">Adicione tarefa</span>
+                    <div class="close">&times</div>
+                    <hr>
+                    <p>Título da tarefa</p>
+                    <input type="text" name="" id="textInput">
+                    <div id="erro-msg"></div>
+                    <p>Prazo</p>
+                    <input type="date" name="" id="dateInput">
+                    <p>Descrição</p>
+                    <textarea name="" id="textArea"></textarea>
+                    <button type="submit" id="buttonConfirmModal">Confirmar</button>
+                </form>
+            </div>
+            <div>
+            </div>
+    </main>
+</body>
+
+</html>
